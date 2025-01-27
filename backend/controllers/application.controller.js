@@ -79,6 +79,7 @@ export const getAppliedJobs = async (req, res) => {
   }
 };
 
+// for admin
 export const getApplicant = async (req, res) => {
   try {
     const jobId = req.params.id;
@@ -104,7 +105,7 @@ export const getApplicant = async (req, res) => {
     });
   }
 };
-
+// for admin
 export const updateStatus = async (req, res) => {
   try {
     const { status } = req.body;
